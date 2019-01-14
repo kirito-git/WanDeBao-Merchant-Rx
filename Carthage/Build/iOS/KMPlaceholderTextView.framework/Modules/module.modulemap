@@ -1,0 +1,11 @@
+framework module KMPlaceholderTextView {
+  umbrella header "KMPlaceholderTextView.h"
+
+  export *
+  module * { export * }
+}
+
+module KMPlaceholderTextView.Swift {
+    header "KMPlaceholderTextView-Swift.h"
+    requires objc
+}

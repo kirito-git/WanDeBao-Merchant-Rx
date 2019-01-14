@@ -1,0 +1,28 @@
+os: osx
+language: objective-c
+matrix:
+  include:
+    - {osx_image: xcode8.3,     env: 'SWFT=3.1  PLAT=macOS  DST="arch=x86_64"'}
+    - {osx_image: xcode8.3,     env: 'SWFT=3.1  PLAT=iOS    DST="OS=10.3.1,name=iPhone SE"'}
+
+    - {osx_image: xcode9.2,     env: 'SWFT=3.2  PLAT=macOS  DST="arch=x86_64"'}
+    - {osx_image: xcode9.2,     env: 'SWFT=3.2  PLAT=iOS    DST="OS=11.2,name=iPhone SE"'}
+
+    - {osx_image: xcode9.3beta, env: 'SWFT=3.3  PLAT=macOS  DST="arch=x86_64"'}
+    - {osx_image: xcode9.3beta, env: 'SWFT=3.3  PLAT=iOS    DST="OS=11.3,name=iPhone SE"'}
+
+    - {osx_image: xcode9.2,     env: 'SWFT=4.0  PLAT=macOS  DST="arch=x86_64"'}
+    - {osx_image: xcode9.2,     env: 'SWFT=4.0  PLAT=iOS    DST="OS=11.2,name=iPhone SE"'}
+
+    - {osx_image: xcode9.3beta, env: 'SWFT=4.1  PLAT=macOS  DST="arch=x86_64"'}
+    - {osx_image: xcode9.3beta, env: 'SWFT=4.1  PLAT=iOS    DST="OS=11.3,name=iPhone SE"'}
+
+cache:
+  directories:
+  - Carthage
+before_install:
+  - carthage bootstrap --cache-builds --no-use-binaries --platform $PLAT --verbose
+install:
+  - xcodebuild -scheme PMKAccounts -quiet -destination "$DST" SWIFT_VERSION=$SWFT build-for-testing
+script:
+  - xcodebuild -scheme PMKAccounts -quiet -destination "$DST" test

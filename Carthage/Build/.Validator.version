@@ -1,0 +1,9 @@
+{
+  "commitish" : "v3.0.1",
+  "iOS" : [
+    {
+      "name" : "Validator",
+      "hash" : "4528e6f81f297c6d2f71cd8b4c91f85a3e94e45a5708179a183bfcf3ded888e1"
+    }
+  ]
+}

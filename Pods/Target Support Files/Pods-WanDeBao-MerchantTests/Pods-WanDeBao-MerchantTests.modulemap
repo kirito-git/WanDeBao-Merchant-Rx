@@ -1,0 +1,6 @@
+framework module Pods_WanDeBao_MerchantTests {
+  umbrella header "Pods-WanDeBao-MerchantTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

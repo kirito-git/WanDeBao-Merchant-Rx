@@ -1,0 +1,18 @@
+os: osx
+language: objective-c
+matrix:
+  include:
+    - {osx_image: xcode8.3,     env: 'SWFT=3.1 DST="OS=10.3.1,name=iPhone SE"'}
+    - {osx_image: xcode9.2,     env: 'SWFT=3.2 DST="OS=11.2,name=iPhone SE"'}
+    - {osx_image: xcode9.3beta, env: 'SWFT=3.3 DST="OS=11.3,name=iPhone SE"'}
+    - {osx_image: xcode9.2,     env: 'SWFT=4.0 DST="OS=11.2,name=iPhone SE"'}
+    - {osx_image: xcode9.3beta, env: 'SWFT=4.1 DST="OS=11.3,name=iPhone SE"'}
+cache:
+  directories:
+  - Carthage
+before_install:
+  - carthage bootstrap --cache-builds --no-use-binaries --platform iOS --verbose
+install:
+  - xcodebuild -scheme PMKAVFoundation -quiet -destination "$DST" SWIFT_VERSION=$SWFT build-for-testing
+script:
+  - xcodebuild -scheme PMKAVFoundation -quiet -destination "$DST" test

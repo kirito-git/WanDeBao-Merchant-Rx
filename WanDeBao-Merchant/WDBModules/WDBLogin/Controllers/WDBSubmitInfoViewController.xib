@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDBSubmitInfoViewController" customModule="WanDeBao_Merchant">
+            <connections>
+                <outlet property="sumitInfoBtn" destination="7dJ-1g-UmB" id="3eH-1c-NDC"/>
+                <outlet property="uploadBusinessLicenseBtn" destination="dcq-fz-swn" id="pIL-VF-NZa"/>
+                <outlet property="uploadCateringServiceLicenseBtn" destination="t1i-9z-h54" id="OVT-Qy-NJ3"/>
+                <outlet property="uploadFoodSafetyNotice" destination="ohT-sW-SG9" id="8fj-bj-dbW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOa-NY-ZtS">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oty-gi-IIo">
+                            <rect key="frame" x="0.0" y="-32.5" width="374" height="712"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="营业执照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb6-AK-NNn">
+                                    <rect key="frame" x="17" y="184" width="347" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="12c-M1-0s1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcq-fz-swn">
+                                    <rect key="frame" x="17" y="224" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="fZY-wP-gbE"/>
+                                        <constraint firstAttribute="height" constant="80" id="mlL-Rg-hHn"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="login_submitinfo_add"/>
+                                    <connections>
+                                        <action selector="uploadBusinessLicenseAction:" destination="-1" eventType="touchUpInside" id="9xG-AY-Yt6"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 上传图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrI-AQ-J20">
+                                    <rect key="frame" x="115" y="253" width="100" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="CRN-Pf-6Db"/>
+                                        <constraint firstAttribute="width" constant="100" id="piJ-Xi-6GR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-Ul-ZpU">
+                                    <rect key="frame" x="0.0" y="314" width="374" height="1"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="JbG-Uy-FuW"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餐饮服务许可证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXu-bb-WZL">
+                                    <rect key="frame" x="17" y="344" width="150" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="RMr-En-Ia2"/>
+                                        <constraint firstAttribute="height" constant="21" id="kCs-Sv-WSS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1i-9z-h54">
+                                    <rect key="frame" x="17" y="385" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="fzg-ba-7Sl"/>
+                                        <constraint firstAttribute="height" constant="80" id="tVS-fW-NnT"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="login_submitinfo_add"/>
+                                    <connections>
+                                        <action selector="uploadCateringServiceLicenseAction:" destination="-1" eventType="touchUpInside" id="K2A-0r-eg9"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eu-yJ-eXd">
+                                    <rect key="frame" x="115" y="414" width="100" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="2Ul-xo-Zqm"/>
+                                        <constraint firstAttribute="width" constant="100" id="LuZ-7h-ZQy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Y2-Su-e2p">
+                                    <rect key="frame" x="0.0" y="475" width="374" height="1"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="eNS-uO-sWn"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餐饮服务食品安全监督信息公告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34K-1q-B8O">
+                                    <rect key="frame" x="17" y="501" width="347" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="dux-55-OQj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohT-sW-SG9">
+                                    <rect key="frame" x="17" y="542" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="Zht-ic-XTw"/>
+                                        <constraint firstAttribute="height" constant="80" id="s6T-W3-cfD"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="login_submitinfo_add"/>
+                                    <connections>
+                                        <action selector="uploadFoodSafetyNoticeAction:" destination="-1" eventType="touchUpInside" id="yl7-d2-dfE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bij-lE-CPG">
+                                    <rect key="frame" x="115" y="571" width="100" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="AxZ-yN-N09"/>
+                                        <constraint firstAttribute="height" constant="21" id="XM3-pR-v7k"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_submitinfo_topviewbg" translatesAutoresizingMaskIntoConstraints="NO" id="Uc4-Vn-VZ5">
+                                    <rect key="frame" x="0.0" y="64" width="374" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="oEe-yp-ILj"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还差3步，即可完成填写" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-ac-Zhc">
+                                    <rect key="frame" x="0.0" y="64" width="374" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="XPm-5q-gT1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XB8-aW-GE8">
+                                    <rect key="frame" x="0.0" y="114" width="374" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写前，请准备好法人营业执照，许可证和信息公示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-50-zyA">
+                                            <rect key="frame" x="0.0" y="5" width="374" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="WlM-WN-9s0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Gem-3m-yWr"/>
+                                        <constraint firstAttribute="trailing" secondItem="XBh-50-zyA" secondAttribute="trailing" id="nhh-ms-W9u"/>
+                                        <constraint firstItem="XBh-50-zyA" firstAttribute="leading" secondItem="XB8-aW-GE8" secondAttribute="leading" id="sxO-4P-UfN"/>
+                                        <constraint firstItem="XBh-50-zyA" firstAttribute="top" secondItem="XB8-aW-GE8" secondAttribute="top" constant="5" id="xmX-hk-PLT"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="ohT-sW-SG9" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" constant="17" id="02m-Oi-0Y6"/>
+                                <constraint firstItem="CSF-ac-Zhc" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" id="2CW-WS-Nhb"/>
+                                <constraint firstItem="dcq-fz-swn" firstAttribute="top" secondItem="Hb6-AK-NNn" secondAttribute="bottom" constant="20" id="8Dz-ap-Lgq"/>
+                                <constraint firstItem="HrI-AQ-J20" firstAttribute="leading" secondItem="dcq-fz-swn" secondAttribute="trailing" constant="18" id="8WO-ew-6w9"/>
+                                <constraint firstItem="Uc4-Vn-VZ5" firstAttribute="top" secondItem="Oty-gi-IIo" secondAttribute="top" constant="64" id="ApQ-oB-4wL"/>
+                                <constraint firstItem="dcq-fz-swn" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" constant="17" id="Bnl-9r-b49"/>
+                                <constraint firstItem="t1i-9z-h54" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" constant="17" id="Ced-AX-V1G"/>
+                                <constraint firstAttribute="trailing" secondItem="Hb6-AK-NNn" secondAttribute="trailing" constant="10" id="F1V-km-SCl"/>
+                                <constraint firstItem="Bij-lE-CPG" firstAttribute="top" secondItem="34K-1q-B8O" secondAttribute="bottom" constant="49" id="FG0-h2-huT"/>
+                                <constraint firstAttribute="trailing" secondItem="XB8-aW-GE8" secondAttribute="trailing" id="FWv-vJ-7Ds"/>
+                                <constraint firstItem="PeX-Ul-ZpU" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" id="Fz7-C9-9Qi"/>
+                                <constraint firstItem="XB8-aW-GE8" firstAttribute="top" secondItem="Uc4-Vn-VZ5" secondAttribute="bottom" id="Is8-CR-Ecb"/>
+                                <constraint firstAttribute="trailing" secondItem="PeX-Ul-ZpU" secondAttribute="trailing" id="Jbs-xe-4P3"/>
+                                <constraint firstAttribute="bottom" secondItem="ohT-sW-SG9" secondAttribute="bottom" constant="90" id="Jro-zg-ilG"/>
+                                <constraint firstItem="t1i-9z-h54" firstAttribute="top" secondItem="EXu-bb-WZL" secondAttribute="bottom" constant="20" id="L7P-iI-Wde"/>
+                                <constraint firstItem="Hb6-AK-NNn" firstAttribute="top" secondItem="XB8-aW-GE8" secondAttribute="bottom" constant="20" id="MUl-mp-xcV"/>
+                                <constraint firstItem="6Y2-Su-e2p" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" id="QOG-G4-Ww6"/>
+                                <constraint firstItem="4eu-yJ-eXd" firstAttribute="top" secondItem="EXu-bb-WZL" secondAttribute="bottom" constant="49" id="QS0-Fw-8cQ"/>
+                                <constraint firstItem="EXu-bb-WZL" firstAttribute="top" secondItem="PeX-Ul-ZpU" secondAttribute="bottom" constant="29" id="T8G-Eh-Shv"/>
+                                <constraint firstItem="PeX-Ul-ZpU" firstAttribute="top" secondItem="dcq-fz-swn" secondAttribute="bottom" constant="10" id="ZoN-Ag-Jai"/>
+                                <constraint firstItem="6Y2-Su-e2p" firstAttribute="top" secondItem="t1i-9z-h54" secondAttribute="bottom" constant="10" id="ak1-xW-N0H"/>
+                                <constraint firstItem="EXu-bb-WZL" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" constant="17" id="bJ0-oe-Xtw"/>
+                                <constraint firstItem="4eu-yJ-eXd" firstAttribute="leading" secondItem="t1i-9z-h54" secondAttribute="trailing" constant="18" id="eKN-gz-HLN"/>
+                                <constraint firstItem="CSF-ac-Zhc" firstAttribute="top" secondItem="Uc4-Vn-VZ5" secondAttribute="top" id="jVX-wm-p0W"/>
+                                <constraint firstAttribute="trailing" secondItem="6Y2-Su-e2p" secondAttribute="trailing" id="kAC-xn-37o"/>
+                                <constraint firstAttribute="trailing" secondItem="CSF-ac-Zhc" secondAttribute="trailing" id="kuK-1T-n0l"/>
+                                <constraint firstItem="Hb6-AK-NNn" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" constant="17" id="m1i-ub-q8B"/>
+                                <constraint firstItem="34K-1q-B8O" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" constant="17" id="pwz-W5-qd4"/>
+                                <constraint firstItem="ohT-sW-SG9" firstAttribute="top" secondItem="34K-1q-B8O" secondAttribute="bottom" constant="20" id="qA1-ay-oh1"/>
+                                <constraint firstItem="Bij-lE-CPG" firstAttribute="leading" secondItem="ohT-sW-SG9" secondAttribute="trailing" constant="18" id="r6Y-s4-sYP"/>
+                                <constraint firstAttribute="trailing" secondItem="Uc4-Vn-VZ5" secondAttribute="trailing" id="uEz-hA-lN7"/>
+                                <constraint firstItem="34K-1q-B8O" firstAttribute="top" secondItem="6Y2-Su-e2p" secondAttribute="bottom" constant="25" id="vyl-BY-NMl"/>
+                                <constraint firstItem="Uc4-Vn-VZ5" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" id="wIk-Kt-gTY"/>
+                                <constraint firstItem="XB8-aW-GE8" firstAttribute="leading" secondItem="Oty-gi-IIo" secondAttribute="leading" id="wZU-Xh-vKz"/>
+                                <constraint firstItem="HrI-AQ-J20" firstAttribute="top" secondItem="Hb6-AK-NNn" secondAttribute="bottom" constant="49" id="xGN-vD-Od0"/>
+                                <constraint firstAttribute="trailing" secondItem="34K-1q-B8O" secondAttribute="trailing" constant="10" id="zeQ-Vr-uAP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Oty-gi-IIo" secondAttribute="trailing" id="A38-aE-LrJ"/>
+                        <constraint firstItem="Oty-gi-IIo" firstAttribute="leading" secondItem="zOa-NY-ZtS" secondAttribute="leading" id="FM6-DS-ln4"/>
+                        <constraint firstAttribute="bottom" secondItem="Oty-gi-IIo" secondAttribute="bottom" constant="5" id="Ysq-ei-xKu"/>
+                        <constraint firstItem="Oty-gi-IIo" firstAttribute="centerX" secondItem="zOa-NY-ZtS" secondAttribute="centerX" id="kQD-pb-DnG"/>
+                        <constraint firstItem="Oty-gi-IIo" firstAttribute="centerY" secondItem="zOa-NY-ZtS" secondAttribute="centerY" id="wMz-PR-M7Y"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dJ-1g-UmB">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="XYK-0d-lPz"/>
+                    </constraints>
+                    <state key="normal" title="确定" backgroundImage="login_bottomviewbg"/>
+                    <connections>
+                        <action selector="submitCertifyInfoAction:" destination="-1" eventType="touchUpInside" id="Ya0-ZX-o3w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zOa-NY-ZtS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4T9-eH-9aq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7dJ-1g-UmB" secondAttribute="bottom" id="8kE-Zj-z9d"/>
+                <constraint firstItem="7dJ-1g-UmB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FKv-oC-xTw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zOa-NY-ZtS" secondAttribute="bottom" id="Tpx-b3-wwO"/>
+                <constraint firstItem="zOa-NY-ZtS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mNX-2c-yYT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7dJ-1g-UmB" secondAttribute="trailing" id="rPQ-bz-HeY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zOa-NY-ZtS" secondAttribute="trailing" id="rnq-Ql-90l"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="51.5" y="87.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bottomviewbg" width="414" height="48"/>
+        <image name="login_submitinfo_add" width="85" height="85"/>
+        <image name="login_submitinfo_topviewbg" width="414" height="48"/>
+    </resources>
+</document>

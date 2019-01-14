@@ -1,0 +1,21 @@
+os: osx
+language: objective-c
+osx_image: xcode9.2
+env:
+  - PLAT=macOS  SWFT=3.2  DST="arch=x86_64"
+  - PLAT=iOS    SWFT=3.2  DST="OS=11.2,name=iPhone SE"
+
+  - PLAT=macOS  SWFT=4.0  DST="arch=x86_64"
+  - PLAT=iOS    SWFT=4.0  DST="OS=8.4,name=iPhone 4s"
+  - PLAT=iOS    SWFT=4.0  DST="OS=9.3,name=iPhone SE"
+  - PLAT=iOS    SWFT=4.0  DST="OS=10.3.1,name=iPhone SE"
+  - PLAT=iOS    SWFT=4.0  DST="OS=11.2,name=iPhone SE"
+cache:
+  directories:
+  - Carthage
+before_install:
+  - carthage bootstrap --cache-builds --no-use-binaries --platform $PLAT --verbose
+install:
+  - xcodebuild -scheme PMKSocial -target PMKSocial  -quiet -destination "$DST" build-for-testing SWIFT_VERSION=$SWFT
+script:
+  - xcodebuild -scheme PMKSocial -target PMKSLTests -quiet -destination "$DST" test

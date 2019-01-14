@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDBSubmitInfoResultViewController" customModule="WanDeBao_Merchant">
+            <connections>
+                <outlet property="tipDetailLabel" destination="DdS-QQ-jZZ" id="uGq-R8-2Tb"/>
+                <outlet property="tipStatusImgView" destination="lOO-2N-ZCd" id="Myp-ok-lmm"/>
+                <outlet property="tipStatusLabel" destination="yHd-S4-xqa" id="LiF-D4-Af2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMI-wN-Dha">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_submitinfo_success" translatesAutoresizingMaskIntoConstraints="NO" id="lOO-2N-ZCd">
+                            <rect key="frame" x="158" y="31" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="5GA-EC-kFl"/>
+                                <constraint firstAttribute="width" constant="60" id="YH3-1B-8ia"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提交成功！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHd-S4-xqa">
+                            <rect key="frame" x="0.0" y="121" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="mdv-bt-jBQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请耐心等待后台审核" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdS-QQ-jZZ">
+                            <rect key="frame" x="0.0" y="162" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="SBX-Ig-cv4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCm-Om-7nV">
+                            <rect key="frame" x="60" y="218" width="255" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3ql-7e-LZk"/>
+                            </constraints>
+                            <state key="normal" title="返回登录页" backgroundImage="login_loginbtn_bg">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backToLoginViewAction:" destination="-1" eventType="touchUpInside" id="Ap2-49-BvC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sCm-Om-7nV" firstAttribute="centerX" secondItem="DdS-QQ-jZZ" secondAttribute="centerX" id="6Xs-F6-k4v"/>
+                        <constraint firstAttribute="trailing" secondItem="DdS-QQ-jZZ" secondAttribute="trailing" id="CAc-GH-Pbq"/>
+                        <constraint firstItem="yHd-S4-xqa" firstAttribute="top" secondItem="lOO-2N-ZCd" secondAttribute="bottom" constant="30" id="MGM-lh-bAy"/>
+                        <constraint firstItem="DdS-QQ-jZZ" firstAttribute="top" secondItem="yHd-S4-xqa" secondAttribute="bottom" constant="20" id="O09-Pt-tgq"/>
+                        <constraint firstItem="DdS-QQ-jZZ" firstAttribute="leading" secondItem="YMI-wN-Dha" secondAttribute="leading" id="cTF-F1-Gv4"/>
+                        <constraint firstItem="lOO-2N-ZCd" firstAttribute="top" secondItem="YMI-wN-Dha" secondAttribute="top" constant="31" id="eNW-sO-SWU"/>
+                        <constraint firstAttribute="height" constant="280" id="gD8-0L-ifH"/>
+                        <constraint firstItem="sCm-Om-7nV" firstAttribute="top" secondItem="YMI-wN-Dha" secondAttribute="bottom" constant="-62" id="n24-84-BnD"/>
+                        <constraint firstItem="lOO-2N-ZCd" firstAttribute="centerX" secondItem="YMI-wN-Dha" secondAttribute="centerX" id="nht-V3-vPl"/>
+                        <constraint firstAttribute="trailing" secondItem="yHd-S4-xqa" secondAttribute="trailing" id="pQW-wb-ZJE"/>
+                        <constraint firstItem="yHd-S4-xqa" firstAttribute="leading" secondItem="YMI-wN-Dha" secondAttribute="leading" id="qTN-ex-LPg"/>
+                        <constraint firstItem="sCm-Om-7nV" firstAttribute="leading" secondItem="YMI-wN-Dha" secondAttribute="leading" constant="60" id="rSN-tP-LyE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YMI-wN-Dha" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Q0h-4Q-dNn"/>
+                <constraint firstItem="YMI-wN-Dha" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U30-yd-xaf"/>
+                <constraint firstItem="YMI-wN-Dha" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yav-3i-Be2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="51.5" y="87.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_loginbtn_bg" width="300" height="43"/>
+        <image name="login_submitinfo_success" width="50" height="50"/>
+    </resources>
+</document>

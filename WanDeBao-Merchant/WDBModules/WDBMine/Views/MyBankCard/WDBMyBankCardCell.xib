@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="WDBMyBankCardCell" customModule="WanDeBao_Merchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_mybankcard_bg" translatesAutoresizingMaskIntoConstraints="NO" id="q08-62-uP8">
+                        <rect key="frame" x="15" y="15" width="290" height="101.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_mybankcard_bankicon" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-Ia-upR">
+                        <rect key="frame" x="29" y="38.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="f22-dz-TjI"/>
+                            <constraint firstAttribute="width" constant="40" id="hYh-77-ceg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-p4-iAs">
+                        <rect key="frame" x="85" y="31" width="174" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="GC5-lE-pBA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持卡人：张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-p8-qgB">
+                        <rect key="frame" x="83" y="55" width="171" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zJe-0N-TPa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6228 **** **** 6959" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMW-fY-L37">
+                        <rect key="frame" x="83" y="75" width="207" height="35.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_mybankcard_bankcardicon" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-jY-niw">
+                        <rect key="frame" x="264" y="30" width="30" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="08X-eF-wpj"/>
+                            <constraint firstAttribute="height" constant="20" id="480-KF-F5y"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="4jF-jY-niw" firstAttribute="leading" secondItem="DYg-p4-iAs" secondAttribute="trailing" constant="5" id="2m0-ad-efh"/>
+                    <constraint firstItem="4ea-Ia-upR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="399-19-Wex"/>
+                    <constraint firstAttribute="bottom" secondItem="UMW-fY-L37" secondAttribute="bottom" constant="6" id="3VJ-ID-jez"/>
+                    <constraint firstItem="DYg-p4-iAs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="3Yj-Hd-Gf1"/>
+                    <constraint firstItem="eeg-p8-qgB" firstAttribute="leading" secondItem="4ea-Ia-upR" secondAttribute="trailing" constant="14" id="C7H-fF-CD5"/>
+                    <constraint firstAttribute="bottom" secondItem="q08-62-uP8" secondAttribute="bottom" id="JAT-4B-OxT"/>
+                    <constraint firstItem="eeg-p8-qgB" firstAttribute="top" secondItem="DYg-p4-iAs" secondAttribute="bottom" constant="4" id="NgB-Tk-GJD"/>
+                    <constraint firstAttribute="trailing" secondItem="UMW-fY-L37" secondAttribute="trailing" constant="30" id="Nyj-JB-1nr"/>
+                    <constraint firstItem="4jF-jY-niw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="OQr-2A-4YM"/>
+                    <constraint firstAttribute="trailing" secondItem="q08-62-uP8" secondAttribute="trailing" constant="15" id="YtU-uF-OtW"/>
+                    <constraint firstItem="q08-62-uP8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="a07-4d-OSR"/>
+                    <constraint firstAttribute="trailing" secondItem="4jF-jY-niw" secondAttribute="trailing" constant="26" id="cei-R7-Lrh"/>
+                    <constraint firstItem="4jF-jY-niw" firstAttribute="leading" secondItem="eeg-p8-qgB" secondAttribute="trailing" constant="10" id="czT-or-Dqf"/>
+                    <constraint firstItem="UMW-fY-L37" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="83" id="me1-bX-WlK"/>
+                    <constraint firstItem="UMW-fY-L37" firstAttribute="top" secondItem="eeg-p8-qgB" secondAttribute="bottom" id="qSt-Mh-Pw8"/>
+                    <constraint firstItem="4ea-Ia-upR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rKN-A7-kqt"/>
+                    <constraint firstItem="DYg-p4-iAs" firstAttribute="leading" secondItem="4ea-Ia-upR" secondAttribute="trailing" constant="16" id="uBV-7h-drI"/>
+                    <constraint firstItem="q08-62-uP8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="v87-XN-eM9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bankBg" destination="q08-62-uP8" id="gtd-nJ-WSX"/>
+                <outlet property="bankCardLab" destination="UMW-fY-L37" id="zMS-fe-gsF"/>
+                <outlet property="bankIcon" destination="4ea-Ia-upR" id="5vb-Pq-Ioq"/>
+                <outlet property="bankNameLab" destination="DYg-p4-iAs" id="jpl-R7-gYx"/>
+                <outlet property="bankOwerLab" destination="eeg-p8-qgB" id="umo-QC-jQH"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="109.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_mybankcard_bankcardicon" width="32" height="23"/>
+        <image name="mine_mybankcard_bankicon" width="51" height="51"/>
+        <image name="mine_mybankcard_bg" width="375" height="120"/>
+    </resources>
+</document>

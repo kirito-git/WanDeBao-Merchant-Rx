@@ -1,0 +1,4 @@
+framework module SCLAlertView {
+    header "SCLAlertView-Swift.h"
+    requires objc
+}

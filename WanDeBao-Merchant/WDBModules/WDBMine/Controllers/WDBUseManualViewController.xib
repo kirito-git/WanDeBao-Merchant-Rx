@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDBUseManualViewController" customModule="WanDeBao_Merchant">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_usemanual_title" translatesAutoresizingMaskIntoConstraints="NO" id="4PS-c8-33S">
+                    <rect key="frame" x="112.5" y="50" width="150" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Hdi-V5-p9z"/>
+                        <constraint firstAttribute="height" constant="50" id="oaS-n8-iiB"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfG-T5-HsD">
+                    <rect key="frame" x="30" y="130" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4lA-y2-pjs"/>
+                        <constraint firstAttribute="width" constant="120" id="7fZ-a4-LAl"/>
+                    </constraints>
+                    <state key="normal" title="如何创建门店" backgroundImage="mine_usemanual_subtitlebg">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="首页点击创建门店，填写店铺相关的信息，提交店铺相关的资质，等待工作人员与您取得联系，签订相关的协议即可开启门店" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-Yd-y80">
+                    <rect key="frame" x="30" y="170" width="315" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnn-nA-5CJ">
+                    <rect key="frame" x="30" y="244" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="0qP-PH-gab"/>
+                        <constraint firstAttribute="height" constant="30" id="zeA-jh-PqD"/>
+                    </constraints>
+                    <state key="normal" title="游戏如何创建" backgroundImage="mine_usemanual_subtitlebg">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在门店管理中选择游戏管理，可根据店铺实际状况选择游戏，游戏个数不限" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt7-Cr-XTf">
+                    <rect key="frame" x="30" y="284" width="315" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-yP-KGv">
+                    <rect key="frame" x="30" y="340" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3CM-Hj-kXX"/>
+                        <constraint firstAttribute="width" constant="120" id="RFa-9a-2Pj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="支付方式选择" backgroundImage="mine_usemanual_subtitlebg"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家可自行选择支付方式" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-2Y-moK">
+                    <rect key="frame" x="30" y="380" width="315" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jmv-yP-KGv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="0Jc-OS-ERy"/>
+                <constraint firstItem="4PS-c8-33S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0qT-dn-dXu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aoK-Yd-y80" secondAttribute="trailing" constant="30" id="2wm-RW-3TB"/>
+                <constraint firstItem="lWo-2Y-moK" firstAttribute="top" secondItem="jmv-yP-KGv" secondAttribute="bottom" constant="10" id="486-00-7qQ"/>
+                <constraint firstItem="CfG-T5-HsD" firstAttribute="top" secondItem="4PS-c8-33S" secondAttribute="bottom" constant="30" id="B8z-VL-oDl"/>
+                <constraint firstItem="Vnn-nA-5CJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="INz-lc-0Lc"/>
+                <constraint firstItem="aoK-Yd-y80" firstAttribute="top" secondItem="CfG-T5-HsD" secondAttribute="bottom" constant="10" id="JLk-Nz-i3g"/>
+                <constraint firstItem="Xt7-Cr-XTf" firstAttribute="top" secondItem="Vnn-nA-5CJ" secondAttribute="bottom" constant="10" id="MEY-hC-JuZ"/>
+                <constraint firstItem="Xt7-Cr-XTf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="QoO-P9-EYV"/>
+                <constraint firstItem="Vnn-nA-5CJ" firstAttribute="top" secondItem="aoK-Yd-y80" secondAttribute="bottom" constant="20" id="Qqu-Uj-7FR"/>
+                <constraint firstItem="CfG-T5-HsD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="RHK-98-26j"/>
+                <constraint firstItem="aoK-Yd-y80" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="SjA-05-OJH"/>
+                <constraint firstItem="lWo-2Y-moK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="bOF-R6-v2H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xt7-Cr-XTf" secondAttribute="trailing" constant="30" id="j9M-Ht-oRV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lWo-2Y-moK" secondAttribute="trailing" constant="30" id="m6r-J3-fnZ"/>
+                <constraint firstItem="jmv-yP-KGv" firstAttribute="top" secondItem="Xt7-Cr-XTf" secondAttribute="bottom" constant="20" id="o4W-bx-sRW"/>
+                <constraint firstItem="4PS-c8-33S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="xsJ-kD-4JB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="51.5" y="118.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_usemanual_subtitlebg" width="108" height="21"/>
+        <image name="mine_usemanual_title" width="149" height="46"/>
+    </resources>
+</document>
